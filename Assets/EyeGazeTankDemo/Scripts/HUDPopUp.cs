@@ -13,8 +13,9 @@ public class HUDPopUp : MonoBehaviour
     private GameObject HUDCanvas;
 
     public string targetName;
-    private Vector3 targetToolTipPosition;
-    private Quaternion targetToolTipOrientation;
+    //for ToolTip animation
+    //private Vector3 targetToolTipPosition;
+    //private Quaternion targetToolTipOrientation;
 
     // Start is called before the first frame update
     void Start()
@@ -61,8 +62,9 @@ public class HUDPopUp : MonoBehaviour
 
             if (toolTip != null)
             {
-                targetToolTipPosition = toolTip.transform.position;
-                targetToolTipOrientation = toolTip.transform.rotation;
+                //for tooltip animation
+                //targetToolTipPosition = toolTip.transform.position;
+                //targetToolTipOrientation = toolTip.transform.rotation;
                 Debug.Log("Tooltip on Target is Found and updated");
                 return true;
             }
