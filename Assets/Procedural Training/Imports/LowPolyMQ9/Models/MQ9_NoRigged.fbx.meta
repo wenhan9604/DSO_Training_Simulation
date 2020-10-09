@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: ab3f572ce22f0ac4c8b5a602bcf875b3
+timeCreated: 1566197042
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: AGM114-L1
+    100002: AGM114-L2
+    100004: AGM114-R1
+    100006: AGM114-R2
+    100008: GBU12-L
+    100010: GBU12-R
+    100012: MQ9
+    100014: MQ9.001
+    100016: MQ9.002
+    100018: MQ9_MissilePodL1
+    100020: MQ9_MissilePodL2
+    100022: MQ9_MissilePodR1
+    100024: MQ9_MissilePodR2
+    100026: //RootNode
+    100028: Camera
+    100030: Propeller
+    400000: AGM114-L1
+    400002: AGM114-L2
+    400004: AGM114-R1
+    400006: AGM114-R2
+    400008: GBU12-L
+    400010: GBU12-R
+    400012: MQ9
+    400014: MQ9.001
+    400016: MQ9.002
+    400018: MQ9_MissilePodL1
+    400020: MQ9_MissilePodL2
+    400022: MQ9_MissilePodR1
+    400024: MQ9_MissilePodR2
+    400026: //RootNode
+    400028: Camera
+    400030: Propeller
+    2300000: AGM114-L1
+    2300002: AGM114-L2
+    2300004: AGM114-R1
+    2300006: AGM114-R2
+    2300008: GBU12-L
+    2300010: GBU12-R
+    2300012: MQ9
+    2300014: MQ9.001
+    2300016: MQ9.002
+    2300018: MQ9_MissilePodL1
+    2300020: MQ9_MissilePodL2
+    2300022: MQ9_MissilePodR1
+    2300024: MQ9_MissilePodR2
+    2300026: Camera
+    2300028: Propeller
+    3300000: AGM114-L1
+    3300002: AGM114-L2
+    3300004: AGM114-R1
+    3300006: AGM114-R2
+    3300008: GBU12-L
+    3300010: GBU12-R
+    3300012: MQ9
+    3300014: MQ9.001
+    3300016: MQ9.002
+    3300018: MQ9_MissilePodL1
+    3300020: MQ9_MissilePodL2
+    3300022: MQ9_MissilePodR1
+    3300024: MQ9_MissilePodR2
+    3300026: Camera
+    3300028: Propeller
+    4300000: MQ9.002
+    4300002: MQ9.001
+    4300004: AGM114-L2
+    4300006: AGM114-R1
+    4300008: AGM114-R2
+    4300010: GBU12-L
+    4300012: GBU12-R
+    4300014: MQ9_MissilePodL1
+    4300016: MQ9_MissilePodL2
+    4300018: MQ9_MissilePodR1
+    4300020: MQ9_MissilePodR2
+    4300022: MQ9
+    4300024: AGM114-L1
+    4300026: Propeller
+    4300028: Camera
+    7400000: AGM114-L2|IdleGrounded
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

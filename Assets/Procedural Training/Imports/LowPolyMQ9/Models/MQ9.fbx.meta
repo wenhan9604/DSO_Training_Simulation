@@ -1,0 +1,609 @@
+fileFormatVersion: 2
+guid: afb3d382a9a06a246a49ac778244da1e
+timeCreated: 1566142425
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Camera
+    100004: Camera_end
+    100006: LandingGearFront
+    100008: LandingGearFront_end
+    100010: LandingGearL
+    100012: LandingGearR
+    100014: MQ9
+    100016: //RootNode
+    100018: MQ9_MissliePodL1
+    100020: MQ9_MissliePodL2
+    100022: MQ9_MissliePodR1
+    100024: MQ9_MissliePodR2
+    100026: Propeller
+    100028: Propeller_end
+    100030: Root
+    100032: WeaponsPlaceholder
+    100034: WeaponsPlaceholder.001
+    100036: WeaponsPlaceholder.002
+    100038: WeaponsPlaceholder.003
+    100040: WeaponsPlaceholder.004
+    100042: WeaponsPlaceholder.005
+    100044: WheelL
+    100046: WheelL_end
+    100048: WheelR
+    100050: WheelR_end
+    100052: AGM114-L1
+    100054: AGM114-L2
+    100056: AGM114-R1
+    100058: AGM114-R2
+    100060: GBU12-L
+    100062: GBU12-R
+    100064: MQ9_MissilePodL1
+    100066: MQ9_MissilePodL2
+    100068: MQ9_MissilePodR1
+    100070: MQ9_MissilePodR2
+    400000: Armature
+    400002: Camera
+    400004: Camera_end
+    400006: LandingGearFront
+    400008: LandingGearFront_end
+    400010: LandingGearL
+    400012: LandingGearR
+    400014: //RootNode
+    400016: MQ9
+    400018: MQ9_MissliePodL1
+    400020: MQ9_MissliePodL2
+    400022: MQ9_MissliePodR1
+    400024: MQ9_MissliePodR2
+    400026: Propeller
+    400028: Propeller_end
+    400030: Root
+    400032: WeaponsPlaceholder
+    400034: WeaponsPlaceholder.001
+    400036: WeaponsPlaceholder.002
+    400038: WeaponsPlaceholder.003
+    400040: WeaponsPlaceholder.004
+    400042: WeaponsPlaceholder.005
+    400044: WheelL
+    400046: WheelL_end
+    400048: WheelR
+    400050: WheelR_end
+    400052: AGM114-L1
+    400054: AGM114-L2
+    400056: AGM114-R1
+    400058: AGM114-R2
+    400060: GBU12-L
+    400062: GBU12-R
+    400064: MQ9_MissilePodL1
+    400066: MQ9_MissilePodL2
+    400068: MQ9_MissilePodR1
+    400070: MQ9_MissilePodR2
+    2300000: WeaponsPlaceholder
+    2300002: WeaponsPlaceholder.001
+    2300004: WeaponsPlaceholder.002
+    2300006: WeaponsPlaceholder.003
+    2300008: WeaponsPlaceholder.004
+    2300010: WeaponsPlaceholder.005
+    2300012: AGM114-L1
+    2300014: AGM114-L2
+    2300016: AGM114-R1
+    2300018: AGM114-R2
+    2300020: GBU12-L
+    2300022: GBU12-R
+    3300000: WeaponsPlaceholder
+    3300002: WeaponsPlaceholder.001
+    3300004: WeaponsPlaceholder.002
+    3300006: WeaponsPlaceholder.003
+    3300008: WeaponsPlaceholder.004
+    3300010: WeaponsPlaceholder.005
+    3300012: AGM114-L1
+    3300014: AGM114-L2
+    3300016: AGM114-R1
+    3300018: AGM114-R2
+    3300020: GBU12-L
+    3300022: GBU12-R
+    4300000: WeaponsPlaceholder.005
+    4300002: WeaponsPlaceholder.004
+    4300004: WeaponsPlaceholder.003
+    4300006: WeaponsPlaceholder.002
+    4300008: WeaponsPlaceholder.001
+    4300010: MQ9
+    4300012: MQ9_MissliePodR1
+    4300014: MQ9_MissliePodR2
+    4300016: MQ9_MissliePodL1
+    4300018: MQ9_MissliePodL2
+    4300020: WeaponsPlaceholder
+    4300022: AGM114-L2
+    4300024: AGM114-R1
+    4300026: AGM114-R2
+    4300028: GBU12-L
+    4300030: GBU12-R
+    4300032: AGM114-L1
+    4300034: MQ9_MissilePodR1
+    4300036: MQ9_MissilePodR2
+    4300038: MQ9_MissilePodL1
+    4300040: MQ9_MissilePodL2
+    7400000: Default
+    7400002: Idle
+    7400004: IdleGrounded
+    7400006: TiresIn
+    7400008: TiresOut
+    9500000: //RootNode
+    13700000: MQ9
+    13700002: MQ9_MissliePodL1
+    13700004: MQ9_MissliePodL2
+    13700006: MQ9_MissliePodR1
+    13700008: MQ9_MissliePodR2
+    13700010: MQ9_MissilePodL1
+    13700012: MQ9_MissilePodL2
+    13700014: MQ9_MissilePodR1
+    13700016: MQ9_MissilePodR2
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default
+      takeName: Armature|Default
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Camera
+        weight: 1
+      - path: Armature/Root/Camera/Camera_end
+        weight: 1
+      - path: Armature/Root/LandingGearFront
+        weight: 1
+      - path: Armature/Root/LandingGearFront/LandingGearFront_end
+        weight: 1
+      - path: Armature/Root/LandingGearL
+        weight: 1
+      - path: Armature/Root/LandingGearL/WheelL
+        weight: 1
+      - path: Armature/Root/LandingGearL/WheelL/WheelL_end
+        weight: 1
+      - path: Armature/Root/LandingGearR
+        weight: 1
+      - path: Armature/Root/LandingGearR/WheelR
+        weight: 1
+      - path: Armature/Root/LandingGearR/WheelR/WheelR_end
+        weight: 1
+      - path: Armature/Root/Propeller
+        weight: 1
+      - path: Armature/Root/Propeller/Propeller_end
+        weight: 1
+      - path: MQ9
+        weight: 1
+      - path: MQ9_MissliePodL1
+        weight: 1
+      - path: MQ9_MissliePodL2
+        weight: 1
+      - path: MQ9_MissliePodR1
+        weight: 1
+      - path: MQ9_MissliePodR2
+        weight: 1
+      - path: WeaponsPlaceholder
+        weight: 1
+      - path: WeaponsPlaceholder.001
+        weight: 1
+      - path: WeaponsPlaceholder.002
+        weight: 1
+      - path: WeaponsPlaceholder.003
+        weight: 1
+      - path: WeaponsPlaceholder.004
+        weight: 1
+      - path: WeaponsPlaceholder.005
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Armature|Idle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Camera
+        weight: 1
+      - path: Armature/Root/Camera/Camera_end
+        weight: 1
+      - path: Armature/Root/LandingGearFront
+        weight: 1
+      - path: Armature/Root/LandingGearFront/LandingGearFront_end
+        weight: 1
+      - path: Armature/Root/LandingGearL
+        weight: 1
+      - path: Armature/Root/LandingGearL/WheelL
+        weight: 1
+      - path: Armature/Root/LandingGearL/WheelL/WheelL_end
+        weight: 1
+      - path: Armature/Root/LandingGearR
+        weight: 1
+      - path: Armature/Root/LandingGearR/WheelR
+        weight: 1
+      - path: Armature/Root/LandingGearR/WheelR/WheelR_end
+        weight: 1
+      - path: Armature/Root/Propeller
+        weight: 1
+      - path: Armature/Root/Propeller/Propeller_end
+        weight: 1
+      - path: MQ9
+        weight: 1
+      - path: MQ9_MissliePodL1
+        weight: 1
+      - path: MQ9_MissliePodL2
+        weight: 1
+      - path: MQ9_MissliePodR1
+        weight: 1
+      - path: MQ9_MissliePodR2
+        weight: 1
+      - path: WeaponsPlaceholder
+        weight: 1
+      - path: WeaponsPlaceholder.001
+        weight: 1
+      - path: WeaponsPlaceholder.002
+        weight: 1
+      - path: WeaponsPlaceholder.003
+        weight: 1
+      - path: WeaponsPlaceholder.004
+        weight: 1
+      - path: WeaponsPlaceholder.005
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: IdleGrounded
+      takeName: Armature|IdleGrounded
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Camera
+        weight: 1
+      - path: Armature/Root/Camera/Camera_end
+        weight: 1
+      - path: Armature/Root/LandingGearFront
+        weight: 1
+      - path: Armature/Root/LandingGearFront/LandingGearFront_end
+        weight: 1
+      - path: Armature/Root/LandingGearL
+        weight: 1
+      - path: Armature/Root/LandingGearL/WheelL
+        weight: 1
+      - path: Armature/Root/LandingGearL/WheelL/WheelL_end
+        weight: 1
+      - path: Armature/Root/LandingGearR
+        weight: 1
+      - path: Armature/Root/LandingGearR/WheelR
+        weight: 1
+      - path: Armature/Root/LandingGearR/WheelR/WheelR_end
+        weight: 1
+      - path: Armature/Root/Propeller
+        weight: 1
+      - path: Armature/Root/Propeller/Propeller_end
+        weight: 1
+      - path: MQ9
+        weight: 1
+      - path: MQ9_MissliePodL1
+        weight: 1
+      - path: MQ9_MissliePodL2
+        weight: 1
+      - path: MQ9_MissliePodR1
+        weight: 1
+      - path: MQ9_MissliePodR2
+        weight: 1
+      - path: WeaponsPlaceholder
+        weight: 1
+      - path: WeaponsPlaceholder.001
+        weight: 1
+      - path: WeaponsPlaceholder.002
+        weight: 1
+      - path: WeaponsPlaceholder.003
+        weight: 1
+      - path: WeaponsPlaceholder.004
+        weight: 1
+      - path: WeaponsPlaceholder.005
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TiresIn
+      takeName: Armature|TiresIn
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Camera
+        weight: 1
+      - path: Armature/Root/Camera/Camera_end
+        weight: 1
+      - path: Armature/Root/LandingGearFront
+        weight: 1
+      - path: Armature/Root/LandingGearFront/LandingGearFront_end
+        weight: 1
+      - path: Armature/Root/LandingGearL
+        weight: 1
+      - path: Armature/Root/LandingGearL/WheelL
+        weight: 1
+      - path: Armature/Root/LandingGearL/WheelL/WheelL_end
+        weight: 1
+      - path: Armature/Root/LandingGearR
+        weight: 1
+      - path: Armature/Root/LandingGearR/WheelR
+        weight: 1
+      - path: Armature/Root/LandingGearR/WheelR/WheelR_end
+        weight: 1
+      - path: Armature/Root/Propeller
+        weight: 1
+      - path: Armature/Root/Propeller/Propeller_end
+        weight: 1
+      - path: MQ9
+        weight: 1
+      - path: MQ9_MissliePodL1
+        weight: 1
+      - path: MQ9_MissliePodL2
+        weight: 1
+      - path: MQ9_MissliePodR1
+        weight: 1
+      - path: MQ9_MissliePodR2
+        weight: 1
+      - path: WeaponsPlaceholder
+        weight: 1
+      - path: WeaponsPlaceholder.001
+        weight: 1
+      - path: WeaponsPlaceholder.002
+        weight: 1
+      - path: WeaponsPlaceholder.003
+        weight: 1
+      - path: WeaponsPlaceholder.004
+        weight: 1
+      - path: WeaponsPlaceholder.005
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TiresOut
+      takeName: Armature|TiresOut
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Camera
+        weight: 1
+      - path: Armature/Root/Camera/Camera_end
+        weight: 1
+      - path: Armature/Root/LandingGearFront
+        weight: 1
+      - path: Armature/Root/LandingGearFront/LandingGearFront_end
+        weight: 1
+      - path: Armature/Root/LandingGearL
+        weight: 1
+      - path: Armature/Root/LandingGearL/WheelL
+        weight: 1
+      - path: Armature/Root/LandingGearL/WheelL/WheelL_end
+        weight: 1
+      - path: Armature/Root/LandingGearR
+        weight: 1
+      - path: Armature/Root/LandingGearR/WheelR
+        weight: 1
+      - path: Armature/Root/LandingGearR/WheelR/WheelR_end
+        weight: 1
+      - path: Armature/Root/Propeller
+        weight: 1
+      - path: Armature/Root/Propeller/Propeller_end
+        weight: 1
+      - path: MQ9
+        weight: 1
+      - path: MQ9_MissliePodL1
+        weight: 1
+      - path: MQ9_MissliePodL2
+        weight: 1
+      - path: MQ9_MissliePodR1
+        weight: 1
+      - path: MQ9_MissliePodR2
+        weight: 1
+      - path: WeaponsPlaceholder
+        weight: 1
+      - path: WeaponsPlaceholder.001
+        weight: 1
+      - path: WeaponsPlaceholder.002
+        weight: 1
+      - path: WeaponsPlaceholder.003
+        weight: 1
+      - path: WeaponsPlaceholder.004
+        weight: 1
+      - path: WeaponsPlaceholder.005
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
