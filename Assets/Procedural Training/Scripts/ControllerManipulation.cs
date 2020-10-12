@@ -75,7 +75,7 @@ public class ControllerManipulation : MonoBehaviour
             {
                 isGazeOnTank = true;
             }
-            if (targetName == "T90Mini")
+            if (targetName == "MA9Mini")
             {
                 isGazeOnMiniTank = true;
             }
