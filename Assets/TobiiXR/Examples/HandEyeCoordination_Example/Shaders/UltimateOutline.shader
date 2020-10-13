@@ -6,10 +6,10 @@
 		_MainTex("Texture", 2D) = "white" {}
 
 	_FirstOutlineColor("Outline color", Color) = (0,0,0,1)
-		_FirstOutlineWidth("Outlines width", Range(0.0, 2.0)) = 1.1
+		_FirstOutlineWidth("Outlines width", Range(0.0, 10.0)) = 1.1
 
 		_SecondOutlineColor("Outline color", Color) = (0,0,0,1)
-		_SecondOutlineWidth("Outlines width", Range(0.0, 2.0)) = 1.1
+		_SecondOutlineWidth("Outlines width", Range(0.0, 10.0)) = 1.1
 
 		_Angle("Switch shader on angle", Range(0.0, 180.0)) = 85
 	}

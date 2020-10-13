@@ -6,16 +6,22 @@ using Tobii.XR;
 
 public class ControllerManipulation : MonoBehaviour
 {
+    //UIPanel Features
     private GameObject HUDCanvas;
     private string targetName;
 
-    private bool isGazeOnTank = false;
-    private bool isGazeOnMiniTank = false;
+    private bool isGazeOnMainObject = false;
+    private bool isGazeOnMiniObject = false;
 
+    //Rotating MiniObject
     [SerializeField] private SteamVR_Action_Vector2 touchpadTouch;
-    [SerializeField] private GameObject miniTank;
+    [SerializeField] private GameObject miniObj;
     [SerializeField] private float rotationSpeed = 50;
     private Vector2 touchDeltaValue;
+
+    //Controlling Animation of MiniObject
+    [SerializeField] private Animator _UAVanimator;
+    private bool isExplodedViewActivated = false;
 
     void Start()
     {
@@ -24,11 +30,21 @@ public class ControllerManipulation : MonoBehaviour
 
     void Update()
     {
+        //Controlling Explosion of Object with ButtonClick
+        if(SteamVR_Actions.default_ExplodedView.GetStateDown(SteamVR_Input_Sources.Any))
+        {
+            //UpdateEyeGazedTarget();
+            isExplodedViewActivated = !isExplodedViewActivated;
+            _UAVanimator.SetBool("IsExplodedViewActivated", isExplodedViewActivated);
+
+        }
+
+        //Rotating MiniObject with Trackpad
         if (touchpadTouch.GetChanged(SteamVR_Input_Sources.Any))
         {
             UpdateEyeGazedTarget();
 
-            if (isGazeOnMiniTank)
+            if (isGazeOnMiniObject)
             {
                 touchDeltaValue = touchpadTouch.GetAxisDelta(SteamVR_Input_Sources.Any);
 
@@ -36,7 +52,7 @@ public class ControllerManipulation : MonoBehaviour
                 {
                     Debug.Log("deltavalue = " + touchDeltaValue);
                     float movement = Time.deltaTime * rotationSpeed * 50;
-                    miniTank.transform.Rotate(touchDeltaValue.y * movement, touchDeltaValue.x * movement, 0);
+                    miniObj.transform.Rotate(touchDeltaValue.y * movement, touchDeltaValue.x * movement, 0);
                     //alternateive way of scripting
                     //miniTank.transform.Rotate(Vector3.up, rotationSpeed * touchDeltaValue.x);
                     //miniTank.transform.Rotate(Vector3.right, rotationSpeed * touchDeltaValue.y);
@@ -44,11 +60,12 @@ public class ControllerManipulation : MonoBehaviour
             }
         }
 
+        //UIPanel Pop up depending on Visual Target
         if (SteamVR_Actions.default_GrabPinch.GetStateDown(SteamVR_Input_Sources.Any))
         {
             UpdateEyeGazedTarget();
 
-            if (isGazeOnTank)
+            if (isGazeOnMainObject)
             {
                 UpdateCanvas();
             } 
@@ -73,17 +90,17 @@ public class ControllerManipulation : MonoBehaviour
 
             if (toolTip != null)
             {
-                isGazeOnTank = true;
+                isGazeOnMainObject = true;
             }
             if (targetName == "MA9Mini")
             {
-                isGazeOnMiniTank = true;
+                isGazeOnMiniObject = true;
             }
         }
         else
         {
-            isGazeOnTank = false;
-            isGazeOnMiniTank = false;
+            isGazeOnMainObject = false;
+            isGazeOnMiniObject = false;
         }
     }
 
