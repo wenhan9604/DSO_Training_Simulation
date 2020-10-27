@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4000012506454532}
   - component: {fileID: 114000011075384662}
   m_Layer: 0
-  m_Name: RightRenderModel Slim
+  m_Name: RightRenderModel Slim (no Hands)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25, type: 3}
-  displayHandByDefault: 0
+  displayHandByDefault: 1
   controllerPrefab: {fileID: 1000011460529826, guid: e789c2cc0c98a4c4198a4033fb8ccf96,
     type: 3}
-  displayControllerByDefault: 1
+  displayControllerByDefault: 0

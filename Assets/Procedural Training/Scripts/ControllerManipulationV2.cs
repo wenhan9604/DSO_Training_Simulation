@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 using Tobii.XR;
-using Valve.VR.InteractionSystem.Sample;
 
-public class ControllerManipulation : MonoBehaviour
+public class ControllerManipulationV2 : MonoBehaviour
 {
     //UIPanel Features
     private GameObject HUDCanvas;
@@ -14,27 +13,16 @@ public class ControllerManipulation : MonoBehaviour
     private bool isGazeOnMainObject = false;
     private bool isGazeOnMiniObject = false;
 
+    /*
     //Rotating MiniObject
     [SerializeField] private SteamVR_Action_Vector2 touchpadTouch;
     [SerializeField] private GameObject miniObj;
     [SerializeField] private float rotationSpeed = 50;
-    private Vector2 touchDeltaValue;
+    private Vector2 touchDeltaValue;*/
 
     //Controlling Animation of MiniObject
     [SerializeField] private Animator _UAVanimator;
     private bool isExplodedViewActivated = false;
-
-    //Setting VIVE controllers to be false 
-    [SerializeField] private GameObject viveControllers;
-    private void Awake()
-    {
-        InteractableWings.onAttachedToHand += SetControllersActive;
-    }
-
-    private void OnDisable()
-    {
-        InteractableWings.onAttachedToHand -= SetControllersActive;
-    }
 
     void Start()
     {
@@ -52,6 +40,7 @@ public class ControllerManipulation : MonoBehaviour
 
         }
 
+        /*
         //Rotating MiniObject with Trackpad
         if (touchpadTouch.GetChanged(SteamVR_Input_Sources.Any))
         {
@@ -71,7 +60,7 @@ public class ControllerManipulation : MonoBehaviour
                     //miniTank.transform.Rotate(Vector3.right, rotationSpeed * touchDeltaValue.y);
                 }
             }
-        }
+        }*/
 
         //UIPanel Pop up depending on Visual Target
         if (SteamVR_Actions.default_GrabPinch.GetStateDown(SteamVR_Input_Sources.Any))
@@ -126,18 +115,6 @@ public class ControllerManipulation : MonoBehaviour
             {
                 panel.gameObject.SetActive(true);
             }
-        }
-    }
-
-    void SetControllersActive(bool isObjectGrabbed)
-    {
-        if(isObjectGrabbed)
-        {
-            viveControllers.SetActive(false);
-        }
-        else
-        {
-            viveControllers.SetActive(true);
         }
     }
 }
