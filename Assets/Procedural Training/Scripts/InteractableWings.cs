@@ -22,9 +22,12 @@ namespace Valve.VR.InteractionSystem.Sample
 
 		private Interactable interactable;
 
-		private Vector3 destinationPos = new Vector3(5.045f, 0.935f, -8.631f);
-		[SerializeField] private Quaternion destinationRot;
+		//support for placing Object in slot
+
+		[SerializeField] private Transform destinationTransform;
+
 		private Vector3 currentPos;
+
 		[SerializeField] private float proximityRange = 0.2f;
 		private bool isObjWithinProx = false;
 		private bool IsObjWithinProx
@@ -111,8 +114,8 @@ namespace Valve.VR.InteractionSystem.Sample
 
 				if (isObjWithinProx)
 				{
-					transform.position = destinationPos;
-					//transform.rotation = destinationRot;
+					transform.position = destinationTransform.position;
+					transform.rotation = destinationTransform.rotation;
 				}
 				else
 				{// Restore position/rotation
@@ -163,8 +166,8 @@ namespace Valve.VR.InteractionSystem.Sample
 
 			//logic to determine if object is in proximity 
 			currentPos = transform.parent.transform.position;
-			float diffInDist = Vector3.Distance(currentPos, destinationPos);
-			if (diffInDist < 0.2f && diffInDist > -0.2f)
+			float diffInDist = Vector3.Distance(currentPos, destinationTransform.position);
+			if (diffInDist < proximityRange && diffInDist > -proximityRange)
 			{
 				print("object is within proximity!");
 				IsObjWithinProx = true;

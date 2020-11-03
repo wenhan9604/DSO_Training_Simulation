@@ -24,7 +24,7 @@ public class ControllerManipulation : MonoBehaviour
     [SerializeField] private Animator _UAVanimator;
     private bool isExplodedViewActivated = false;
 
-    //Setting VIVE controllers to be false 
+    //Setting VIVE controllers to be false when object is grabbed
     [SerializeField] private GameObject viveControllers;
     private void Awake()
     {
