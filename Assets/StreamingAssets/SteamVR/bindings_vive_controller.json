@@ -198,7 +198,7 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/explodedview"
+                     "output" : "/actions/default/in/eyegazebutton"
                   }
                },
                "mode" : "button",
@@ -207,7 +207,7 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/explodedview"
+                     "output" : "/actions/default/in/eyegazebutton"
                   }
                },
                "mode" : "button",

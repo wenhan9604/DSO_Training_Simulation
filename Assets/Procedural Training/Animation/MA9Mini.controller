@@ -55,6 +55,32 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &-5530621003838344746
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Camera Animation
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: b186420760f93b648a8425330e22323e, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1107 &-4855585934823234560
 AnimatorStateMachine:
   serializedVersion: 5
@@ -66,19 +92,22 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 2614337486291222761}
-    m_Position: {x: 370, y: -70, z: 0}
+    m_Position: {x: 680, y: 60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6774484100647417134}
-    m_Position: {x: 590, y: 110, z: 0}
+    m_Position: {x: 680, y: 190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -9157325517258043069}
-    m_Position: {x: 270, y: 110, z: 0}
+    m_Position: {x: 400, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3168875205465522943}
-    m_Position: {x: 670, y: -70, z: 0}
+    m_Position: {x: 880, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1197517291497577542}
-    m_Position: {x: 270, y: 280, z: 0}
+    m_Position: {x: 390, y: 250, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -5530621003838344746}
+    m_Position: {x: 719.5236, y: 261.29663, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -98,7 +127,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: CameraSelected
+    m_ConditionEvent: MQ9.Camera
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1197517291497577542}
@@ -123,7 +152,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: CameraSelected
+    m_ConditionEvent: MQ9.Camera
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -9157325517258043069}
@@ -175,13 +204,13 @@ AnimatorController:
   m_Name: MA9Mini
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: IsExplodedViewActivated
+  - m_Name: MQ9Mini
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: CameraSelected
+  - m_Name: MQ9.Camera
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -263,7 +292,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: IsExplodedViewActivated
+    m_ConditionEvent: MQ9Mini
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2614337486291222761}
@@ -288,7 +317,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: IsExplodedViewActivated
+    m_ConditionEvent: MQ9Mini
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6774484100647417134}

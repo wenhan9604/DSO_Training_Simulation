@@ -66,6 +66,10 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/EyeGazeButton",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },

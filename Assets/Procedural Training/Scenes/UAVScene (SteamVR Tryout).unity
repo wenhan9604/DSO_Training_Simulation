@@ -1407,7 +1407,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &387798909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2965,7 +2965,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746857580}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b6a2224ae3db1a46874eaf4d9956bcb, type: 3}
   m_Name: 
@@ -2975,7 +2975,6 @@ MonoBehaviour:
     needsReinit: 0
   miniObj: {fileID: 408733529}
   rotationSpeed: 50
-  _UAVanimator: {fileID: 408733531}
   viveControllers: {fileID: 387787863}
 --- !u!1 &746866270
 GameObject:
@@ -3041,7 +3040,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746873950}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b6a2224ae3db1a46874eaf4d9956bcb, type: 3}
   m_Name: 
@@ -3051,7 +3050,6 @@ MonoBehaviour:
     needsReinit: 0
   miniObj: {fileID: 408733529}
   rotationSpeed: 50
-  _UAVanimator: {fileID: 408733531}
   viveControllers: {fileID: 387787863}
 --- !u!1 &746896068
 GameObject:
@@ -37721,7 +37719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ec70f7856a01d41b731052022d69ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationRot: {x: 0, y: 0, z: 0, w: 0}
+  destinationTransform: {fileID: 0}
   proximityRange: 0.5
 --- !u!33 &8486070596460627993
 MeshFilter:

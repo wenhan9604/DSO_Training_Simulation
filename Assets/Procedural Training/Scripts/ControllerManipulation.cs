@@ -8,10 +8,8 @@ using Valve.VR.InteractionSystem.Sample;
 public class ControllerManipulation : MonoBehaviour
 {
     //UIPanel Features
-    private GameObject HUDCanvas;
     private string targetName;
 
-    private bool isGazeOnMainObject = false;
     private bool isGazeOnMiniObject = false;
 
     //Rotating MiniObject
@@ -19,10 +17,6 @@ public class ControllerManipulation : MonoBehaviour
     [SerializeField] private GameObject miniObj;
     [SerializeField] private float rotationSpeed = 50;
     private Vector2 touchDeltaValue;
-
-    //Controlling Animation of MiniObject
-    [SerializeField] private Animator _UAVanimator;
-    private bool isExplodedViewActivated = false;
 
     //Setting VIVE controllers to be false when object is grabbed
     [SerializeField] private GameObject viveControllers;
@@ -36,22 +30,8 @@ public class ControllerManipulation : MonoBehaviour
         InteractableWings.onAttachedToHand -= SetControllersActive;
     }
 
-    void Start()
-    {
-        HUDCanvas = this.transform.Find("Canvas").gameObject;
-    }
-
     void Update()
     {
-        //Controlling Explosion of Object with ButtonClick
-        if(SteamVR_Actions.default_ExplodedView.GetStateDown(SteamVR_Input_Sources.Any))
-        {
-            //UpdateEyeGazedTarget();
-            isExplodedViewActivated = !isExplodedViewActivated;
-            _UAVanimator.SetBool("IsExplodedViewActivated", isExplodedViewActivated);
-
-        }
-
         //Rotating MiniObject with Trackpad
         if (touchpadTouch.GetChanged(SteamVR_Input_Sources.Any))
         {
@@ -72,25 +52,6 @@ public class ControllerManipulation : MonoBehaviour
                 }
             }
         }
-
-        //UIPanel Pop up depending on Visual Target
-        if (SteamVR_Actions.default_GrabPinch.GetStateDown(SteamVR_Input_Sources.Any))
-        {
-            UpdateEyeGazedTarget();
-
-            if (isGazeOnMainObject)
-            {
-                UpdateCanvas();
-            } 
-        }
-        else if (SteamVR_Actions.default_GrabPinch.GetStateUp(SteamVR_Input_Sources.Any))
-        {
-            //set inactive all panels
-            foreach (Transform panel in HUDCanvas.transform)
-            {
-                panel.gameObject.SetActive(false);
-            }
-        }
     }
 
     void UpdateEyeGazedTarget()
@@ -99,12 +60,7 @@ public class ControllerManipulation : MonoBehaviour
         {
             var focusedObject = TobiiXR.FocusedObjects[0];
             targetName = focusedObject.GameObject.name;
-            GameObject toolTip = focusedObject.GameObject.transform.Find("ToolTip").gameObject;
 
-            if (toolTip != null)
-            {
-                isGazeOnMainObject = true;
-            }
             if (targetName == "MA9Mini")
             {
                 isGazeOnMiniObject = true;
@@ -112,20 +68,7 @@ public class ControllerManipulation : MonoBehaviour
         }
         else
         {
-            isGazeOnMainObject = false;
             isGazeOnMiniObject = false;
-        }
-    }
-
-    void UpdateCanvas()
-    {
-        //check targetName against each child Object
-        foreach (Transform panel in HUDCanvas.transform)
-        {
-            if (panel.gameObject.name == targetName)
-            {
-                panel.gameObject.SetActive(true);
-            }
         }
     }
 

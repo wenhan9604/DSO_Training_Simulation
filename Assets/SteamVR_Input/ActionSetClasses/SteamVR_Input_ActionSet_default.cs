@@ -137,6 +137,14 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean EyeGazeButton
+        {
+            get
+            {
+                return SteamVR_Actions.default_EyeGazeButton;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get
