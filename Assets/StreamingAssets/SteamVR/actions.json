@@ -62,6 +62,14 @@
       "type": "vector2"
     },
     {
+      "name": "/actions/default/in/ExplodedView",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/EyeGazeButton",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
